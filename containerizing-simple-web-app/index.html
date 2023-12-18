@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Web App - LD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body,
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Sora', sans-serif;
+        font-size: 14px;
+        color: #6c727f;
+      }
+      .main {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        width: 336px;
+        height: auto;
+        margin: 16px;
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+        cursor: pointer;
+        transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+      }
+      .card .wrapper-content {
+        padding: 16px 16px 0;
+      }
+      .card .img {
+        width: 100%;
+        background-clip: cover;
+        padding-bottom: 16px;
+      }
+      .card .badge {
+        display: inline-block;
+        border-radius: 16px;
+        color: #883ae1;
+        background: #e6d6fc;
+        padding: 6px 16px;
+        font-size: 10px;
+        font-weight: bold;
+      }
+      .card .title {
+        padding: 16px 0 6px;
+        font-size: 18px;
+        color: #20293a;
+      }
+      .card .author {
+        display: flex;
+        align-items: flex-end;
+        height: 40px;
+        margin: 20px 0;
+        padding-left: 16px;
+        border-top: 1px solid #e5eaf0;
+        font-size: 12px;
+      }
+
+      .card:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 35px 80px 0px rgba(17, 23, 41, 0.1);
+      }
+      .card:active {
+        transform: scale(1);
+        box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <article class="card">
+        <div class="wrapper-content">
+          <img
+            class="img"
+            src="https://images.pexels.com/photos/1903974/pexels-photo-1903974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="badge">Design</div>
+          <h1 class="title">Embracing Minimalism</h1>
+          <p class="content">
+            From minimalist sculptures to minimalist paintings, this blog will
+            inspire you to appreciate the beauty that lies in simplicity.
+          </p>
+        </div>
+        <footer class="author">Annie Spratt</footer>
+      </article>
+    </main>
+  </body>
+</html>
